@@ -13,7 +13,7 @@ export default function About() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
-            Biz Kimiz? (Tutico&apos;nun Hikayesi)
+            Biz Kimiz? (TutiCo.&apos;nun Hikayesi)
           </h2>
           
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
