@@ -46,3 +46,5 @@ public/images
 dist/
 *.log
 public/bg.jpg
+
+content.md

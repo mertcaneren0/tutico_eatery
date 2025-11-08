@@ -89,11 +89,9 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Tutico Lüleburgaz. Tüm hakları saklıdır.
+            © {new Date().getFullYear()} Good design speaks. Our design flirts. – 21collective™
           </p>
-          <p className="text-gray-500 text-xs mt-2">
-            Lüleburgaz Sandviç | Lüleburgaz Tost | Lüleburgaz Mantı | Lüleburgaz Kruvasan | Tutico.Co
-          </p>
+          
         </div>
       </div>
     </footer>
