@@ -11,37 +11,37 @@ interface MenuItem {
 
 const sandwiches: MenuItem[] = [
   {
-    name: 'Klasik Sandviç',
-    description: 'Taze malzemelerle hazırlanan özel soslu sandviç',
-    image: '/images/sandwich-placeholder.jpg',
+    name: 'Tavuklu Salatali Sandviç',
+    description: 'Taze pişmiş ekşi mayalı ekmak, tavuk salatası (tiftiklenmiş tavuk göğsü, tatlı & ekşi salatalık turşusu, mısır, mayonez), kaşar peyniri, marul, mor soğan ',
+    image: '/images/tavuklu_sandvic.png',
   },
   {
-    name: 'Tavuklu Sandviç',
-    description: 'Izgara tavuk göğsü, taze sebzeler ve özel sos',
-    image: '/images/sandwich-placeholder.jpg',
+    name: 'Hindi Füme Sandviç',
+    description: 'Taze pişmiş ekşi mayalı esmer ekmek arasına; pesto mayonez, hindi füme, taze kaşar peyniri, marul, roka, mor soğan',
+    image: '/images/hindifume_sandvic.png',
   },
   {
-    name: 'Köfteli Sandviç',
-    description: 'Ev yapımı köfte, karamelize soğan ve cheddar peyniri',
-    image: '/images/sandwich-placeholder.jpg',
+    name: 'Hangover Sandviç',
+    description: 'Taşe pişmiş ekşi mayalı esmer ekmek; tane hardallı mayonez, hangover sos (közlenmiş kapya biber, domates, kereviz sapı, tane karabiber, çok az miktarda madonuz ve sarımsak) , trakya eski kaşar peyniri, taze kaşar peyniri, marul, roka ',
+    image: '/images/hangover_sandvic.png',
   },
 ];
 
 const breakfast: MenuItem[] = [
   {
-    name: 'Serpme Kahvaltı',
-    description: 'Zengin çeşitlerle dolu serpme kahvaltı tabağı',
-    image: '/images/breakfast-placeholder.jpg',
+    name: 'Baya Karışık Tost',
+    description: 'Ev yapımı salça, kasap sucuk, taze kaşar peyniri, dana jambon, cheddar peyniri, amerikan salatası',
+    image: '/images/bayakarisiktost.png',
   },
   {
-    name: 'Menemen',
-    description: 'Taze domatesli, biberli geleneksel menemen',
-    image: '/images/breakfast-placeholder.jpg',
+    name: 'Beyaz Peynirli Lutenitsalı Tost',
+    description: 'Trakya sert beyaz peynir, trakya yumuşak beyaz peynir, lutenitsa (közlenmiş patlıcan, közlenmiş kapya biber, domates, maydanoz, çok az sarımsak',
+    image: '/images/beyazpeynirli.png',
   },
   {
-    name: 'Gözleme',
-    description: 'El açması hamurdan peynirli veya patatesli gözleme',
-    image: '/images/breakfast-placeholder.jpg',
+    name: 'Kahvehane Tost',
+    description: 'Ev yapımı salça, kasap sucuk, taze kaşar peyniri',
+    image: '/images/kahvehane.png',
   },
 ];
 
@@ -72,10 +72,13 @@ const MenuCard = ({ item, index }: { item: MenuItem; index: number }) => (
     className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
   >
     <div className="relative h-48 bg-gray-200">
-      {/* Placeholder for images */}
-      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-orange-100 to-orange-200">
-        <span className="text-4xl">🍽️</span>
-      </div>
+      <Image
+        src={item.image}
+        alt={item.name}
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
     </div>
     <div className="p-4">
       <h3 className="text-xl font-bold text-gray-900 mb-2">{item.name}</h3>
@@ -96,10 +99,10 @@ export default function Menu() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Tutico Lüleburgaz: Sandviç, Kahvaltı ve Eşsiz Lezzetler
+            Tutico Lüleburgaz: Sandviç, Tost, Kuruvasan ve Eşsiz Lezzetler
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Lüleburgaz&apos;ın en taze ve lezzetli yemeklerini keşfedin. Her gün taze malzemelerle hazırlanan özel tariflerimiz.
+            Lüleburgaz&apos;ın en taze lezettelerini keşfedin. Her gün taze malzemelerle hazırlanan özel tariflerimiz.
           </p>
         </motion.div>
 
@@ -128,7 +131,7 @@ export default function Menu() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold text-gray-900 mb-8"
           >
-            Zengin Lüleburgaz Kahvaltı Seçenekleri
+            Tost Çeşitlerimiz
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {breakfast.map((item, index) => (
@@ -145,7 +148,7 @@ export default function Menu() {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold text-gray-900 mb-8"
           >
-            Ev Yapımı Lüleburgaz Mantısı
+            Ev Yapımı Tepsi Mantısı
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -160,32 +163,22 @@ export default function Menu() {
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   Ev yapımı hamurdan, özenle hazırlanmış mantılarımız. Yoğurt ve tereyağlı sos ile servis edilir. 
-                  Lüleburgaz&apos;da geleneksel lezzetin en güzel hali.
+                  
                 </p>
               </div>
-              <div className="relative h-64 bg-gradient-to-br from-orange-200 to-red-200 rounded-xl flex items-center justify-center">
-                <span className="text-6xl">🥟</span>
+              <div className="relative h-140 rounded-xl overflow-hidden">
+                <Image
+                  src="/images/manti.png"
+                  alt="Ev Yapımı Tepsi Mantısı"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Snacks Section */}
-        <div>
-          <motion.h2
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-8"
-          >
-            Atıştırmalıklar ve Kruvasanlar
-          </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {snacks.map((item, index) => (
-              <MenuCard key={item.name} item={item} index={index} />
-            ))}
-          </div>
-        </div>
+        
       </div>
     </section>
   );

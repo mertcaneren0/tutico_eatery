@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-4 text-[#ff6b35]">Tutico</h3>
             <p className="text-gray-400 text-sm">
-              Lüleburgaz&apos;ın en lezzetli sandviç, kahvaltı ve ev yapımı yemekleri
+              Lüleburgaz&apos;ın en lezzetli sandviç, tost, kruvasan, mantı ve daha fazlası
             </p>
           </div>
 
@@ -22,8 +22,7 @@ export default function Footer() {
               Adres
             </h4>
             <address className="text-gray-400 text-sm not-italic">
-              [Tam Adres Buraya Eklenecek]<br />
-              Lüleburgaz, Kırklareli<br />
+              Siteler, Nazif Balkan Cd. No:11 D:B, 39750 Lüleburgaz/Kırklareli, Türkiye<br />
               Türkiye
             </address>
           </div>
@@ -36,13 +35,13 @@ export default function Footer() {
             </h4>
             <div className="text-gray-400 text-sm space-y-2">
               <p>
-                <a href="tel:+905551234567" className="hover:text-[#ff6b35] transition-colors">
-                  +90 555 123 45 67
+                <a href="tel:+905449107680" className="hover:text-[#ff6b35] transition-colors">
+                  +90 544 910 76 80
                 </a>
               </p>
               <p>
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Tutico+Lüleburgaz" 
+                  href="https://www.google.com/maps/place/TutiCo/@41.393341500000005,27.353369199999996,17z" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-[#ff6b35] transition-colors"
@@ -60,13 +59,13 @@ export default function Footer() {
               Çalışma Saatleri
             </h4>
             <div className="text-gray-400 text-sm space-y-2 mb-4">
-              <p>Hafta İçi: 09:00 - 22:00</p>
-              <p>Hafta Sonu: 09:00 - 23:00</p>
+              <p>Her gün: 08:30 - 20:00</p>
+              <p>Salı kapalıyız</p>
             </div>
             
             <div className="flex gap-4 mt-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/tuticoluleburgaz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#ff6b35] transition-colors"
@@ -75,7 +74,7 @@ export default function Footer() {
                 <Facebook className="w-6 h-6" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/tuticoluleburgaz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#ff6b35] transition-colors"
@@ -93,7 +92,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Tutico Lüleburgaz. Tüm hakları saklıdır.
           </p>
           <p className="text-gray-500 text-xs mt-2">
-            Lüleburgaz Sandviç | Lüleburgaz Kahvaltı | Lüleburgaz Yemek | Lüleburgaz Mantı
+            Lüleburgaz Sandviç | Lüleburgaz Tost | Lüleburgaz Mantı | Lüleburgaz Kruvasan | Tutico.Co
           </p>
         </div>
       </div>

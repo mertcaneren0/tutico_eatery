@@ -1,7 +1,7 @@
 # Tutico Lüleburgaz - Robots.txt
 User-agent: *
 Allow: /
-Sitemap: https://www.tuticoleburgaz.com/sitemap.xml
+Sitemap: https://tutico.co/sitemap.xml
 
 # Disallow admin or private areas (if any in future)
 Disallow: /api/

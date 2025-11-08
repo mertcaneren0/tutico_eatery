@@ -24,7 +24,7 @@ export default function About() {
               </p>
               
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Sandviçlerimizden kahvaltı çeşitlerimize, mantılarımızdan atıştırmalıklarımıza kadar 
+                Sandviçlerimizden tost çeşitlerimize, mantılarımızdan kruvasanlarımıza kadar 
                 her ürünümüzü özenle seçilmiş malzemelerle ve hijyenik koşullarda hazırlıyoruz.
               </p>
               

@@ -31,8 +31,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">Adres</h3>
                   <p className="text-gray-700">
-                    [Tam Adres Buraya Eklenecek]<br />
-                    Lüleburgaz, Kırklareli
+                    Siteler, Nazif Balkan Cd. No:11 D:B, 39750 Lüleburgaz/Kırklareli, Türkiye
                   </p>
                 </div>
               </motion.div>
@@ -48,10 +47,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">Telefon</h3>
                   <a 
-                    href="tel:+905551234567" 
+                    href="tel:+905449107680" 
                     className="text-gray-700 hover:text-[#ff6b35] transition-colors"
                   >
-                    +90 555 123 45 67
+                    +90 544 910 76 80
                   </a>
                 </div>
               </motion.div>
@@ -67,8 +66,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">Çalışma Saatleri</h3>
                   <div className="text-gray-700 space-y-1">
-                    <p>Hafta İçi: 09:00 - 22:00</p>
-                    <p>Hafta Sonu: 09:00 - 23:00</p>
+                    <p>Her gün: 08:30 - 20:00</p>
+                    <p>Salı kapalyız</p>
                   </div>
                 </div>
               </motion.div>
@@ -80,17 +79,17 @@ export default function Contact() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="h-[400px] rounded-xl overflow-hidden shadow-lg"
+              className="h-[450px] rounded-xl overflow-hidden shadow-lg"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47659.84983335681!2d27.35!3d41.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b4f3e3c3c3c3c3%3A0x3c3c3c3c3c3c3c3c!2zTMO8bGVidXJnYXo!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.1134966795476!2d27.353369199999996!3d41.393341500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b4a529ae576059%3A0x4a6efd54541b78ac!2sTutiCo!5e0!3m2!1str!2suk!4v1762567362704!5m2!1str!2suk"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Tutico Lüleburgaz Konum"
+                title="TutiCo. Lüleburgaz Konum"
               />
             </motion.div>
           </div>

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.tuticoleburgaz.com';
+  const baseUrl = 'https://tutico.co';
 
   return [
     {
